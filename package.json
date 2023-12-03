@@ -15,10 +15,7 @@
   "author": "SocialJitsu (https://socialjitsu.com/)",
   "type": "module",
   "scripts": {
-    "package": "yarn npm publish",
-    "lint": "tsc --noEmit",
     "test": "exit 0",
-    "ci": "rm -rf node_modules && yarn install --immutable --immutable-cache --check-cache",
     "types": "cpy $TYPES_SRC/models/* ./src/models/ --flat  && cpy $TYPES_SRC/graphql/public.ts ./src/graphql/ --rename=index.ts --flat"
   },
   "devDependencies": {
