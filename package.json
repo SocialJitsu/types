@@ -6,7 +6,9 @@
     "typescript"
   ],
   "homepage": "https://github.com/socialjitsu/sdk/blob/master/packages/types/README.md",
-  "bugs": "https://github.com/socialjitsu/socialjitsu/issues",
+  "bugs": {
+    "url": "https://github.com/socialjitsu/socialjitsu/issues"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/socialjitsu/tools.git"
@@ -24,9 +26,9 @@
   "publishConfig": {
     "@socialjitsu:registry": "https://npm.pkg.github.com"
   },
-  "gitHead": "cb2b0883e2893cac03aaeabdda5760936f36baa6",
   "dependencies": {
     "graphql": "^16.8.1"
   },
-  "packageManager": "yarn@4.0.2"
+  "types": "./index.d.ts",
+  "main": "index.js"
 }
