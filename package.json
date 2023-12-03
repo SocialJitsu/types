@@ -16,11 +16,10 @@
   "type": "module",
   "scripts": {
     "package": "yarn npm publish",
-    "build": "run -T tsc --build tsconfig.build.json --force",
-    "clean": "tsc --build tsconfig.build.json --clean",
     "lint": "tsc --noEmit",
     "prepublishOnly": "npm run build",
-    "wipe": "del-cli dist",
+    "test": "exit 0",
+    "ci": "yarn install --frozen-lockfile",
     "types": "cpy $TYPES_SRC/models/* ./src/models/ --flat  && cpy $TYPES_SRC/graphql/public.ts ./src/graphql/ --rename=index.ts --flat"
   },
   "devDependencies": {
