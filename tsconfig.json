@@ -1,31 +1,20 @@
 {
-  "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "Node 18 + ESM + Strictest",
   "compilerOptions": {
-    "lib": ["ESNext"],
-    "module": "ESNext",
-    "noEmit": true,
-    "target": "es2022",
-    "strict": true,
-    "rootDir": ".",
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "NodeNext",
-    "allowUnusedLabels": false,
-    "allowUnreachableCode": false,
-    "exactOptionalPropertyTypes": true,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitOverride": true,
-    "noImplicitReturns": true,
-    "noPropertyAccessFromIndexSignature": true,
+    "target": "es2022",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    "strict": true,
     "noUncheckedIndexedAccess": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    //"importsNotUsedAsValues": "error",
-    "checkJs": true
-  },
-  "include": ["./**/*.ts*"],
-
-  "files": ["index.d.ts"]
+    "moduleResolution": "NodeNext",
+    "module": "NodeNext",
+    "outDir": "dist",
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    "lib": ["es2022"]
+  }
 }
