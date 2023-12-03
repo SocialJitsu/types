@@ -27,7 +27,7 @@
     "cpy-cli": "^4.2.0"
   },
   "publishConfig": {
-    "access": "public"
+    "@socialjitsu:registry": "https://npm.pkg.github.com"
   },
   "gitHead": "cb2b0883e2893cac03aaeabdda5760936f36baa6",
   "dependencies": {
