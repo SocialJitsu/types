@@ -5,10 +5,6 @@
   "keywords": [
     "typescript"
   ],
-  "files": [
-    "types/**/*.d.ts",
-    "index.d.ts"
-  ],
   "homepage": "https://github.com/socialjitsu/sdk/blob/master/packages/types/README.md",
   "bugs": {
     "url": "https://github.com/socialjitsu/socialjitsu/issues"
@@ -20,18 +16,22 @@
   "license": "MIT",
   "author": "SocialJitsu (https://socialjitsu.com/)",
   "type": "module",
+  "types": "./index.d.ts",
+  "files": [
+    "types/**/*.d.ts",
+    "index.d.ts"
+  ],
   "scripts": {
     "test": "exit 0",
     "types": "cpy $TYPES_SRC/models/* ./src/models/ --flat  && cpy $TYPES_SRC/graphql/public.ts ./src/graphql/ --rename=index.ts --flat"
+  },
+  "dependencies": {
+    "graphql": "^16.8.1"
   },
   "devDependencies": {
     "cpy-cli": "^4.2.0"
   },
   "publishConfig": {
     "@socialjitsu:registry": "https://npm.pkg.github.com"
-  },
-  "dependencies": {
-    "graphql": "^16.8.1"
-  },
-  "types": "./index.d.ts"
+  }
 }
