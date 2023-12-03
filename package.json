@@ -17,7 +17,6 @@
   "scripts": {
     "package": "yarn npm publish",
     "lint": "tsc --noEmit",
-    "prepublishOnly": "npm run build",
     "test": "exit 0",
     "ci": "yarn install --immutable --immutable-cache --check-cache",
     "types": "cpy $TYPES_SRC/models/* ./src/models/ --flat  && cpy $TYPES_SRC/graphql/public.ts ./src/graphql/ --rename=index.ts --flat"
