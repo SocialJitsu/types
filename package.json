@@ -5,6 +5,10 @@
   "keywords": [
     "typescript"
   ],
+  "files": [
+    "types/**/*.d.ts",
+    "index.d.ts"
+  ],
   "homepage": "https://github.com/socialjitsu/sdk/blob/master/packages/types/README.md",
   "bugs": {
     "url": "https://github.com/socialjitsu/socialjitsu/issues"
@@ -29,6 +33,5 @@
   "dependencies": {
     "graphql": "^16.8.1"
   },
-  "types": "./index.d.ts",
-  "main": "index.js"
+  "types": "./index.d.ts"
 }
