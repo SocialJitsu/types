@@ -1,20 +1,36 @@
 {
   "compilerOptions": {
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "target": "es2022",
-    "allowJs": true,
-    "resolveJsonModule": true,
-    "moduleDetection": "force",
-    "isolatedModules": true,
-    "strict": true,
-    "noUncheckedIndexedAccess": true,
-    "moduleResolution": "NodeNext",
-    "module": "NodeNext",
-    "outDir": "dist",
-    "sourceMap": true,
-    "declaration": true,
-    "declarationMap": true,
-    "lib": ["es2022"]
-  }
+    "module": "commonjs",
+    "lib": ["es2022"],
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "types": [],
+    "noEmit": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "files": ["index.d.ts"]
 }
+
+// {
+//   "compilerOptions": {
+//     "esModuleInterop": true,
+//     "skipLibCheck": true,
+//     "target": "es2022",
+//     "allowJs": true,
+//     "resolveJsonModule": true,
+//     "moduleDetection": "force",
+//     "isolatedModules": true,
+//     "strict": true,
+//     "noUncheckedIndexedAccess": true,
+//     "moduleResolution": "NodeNext",
+//     "module": "NodeNext",
+//     "outDir": "dist",
+//     "sourceMap": true,
+//     "declaration": true,
+//     "declarationMap": true,
+//     "lib": ["es2022"]
+//   },
+//   "include": ["index.d.ts", "typings/**/*"]
+// }

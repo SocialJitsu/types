@@ -23,8 +23,7 @@
   ],
   "scripts": {
     "test": "exit 0",
-    "echo": "echo ${TYPES_SRC}",
-    "types": "cpy $TYPES_SRC/models/* ./src/models/ --flat  && cpy $TYPES_SRC/graphql/public.ts ./src/graphql/ --rename=index.ts --flat"
+    "types": "export $(cat .env | xargs) && cpy $TYPES_SRC/models/index.ts ./types/models/  --flat --rename=index.d.ts && cpy $TYPES_SRC/graphql/public.ts ./types/graphql/ --rename=index.d.ts --flat"
   },
   "dependencies": {
     "graphql": "^16.8.1"
